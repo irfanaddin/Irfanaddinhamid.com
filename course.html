@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewpoint" content="with=devoce-width, initial-scale =1.0">
+    <title>Hamid Financials</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="home1.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home1.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">SERVICES</a></li>
+                    <li><a href="AI.html">ASK AI</a></li>
+                    <li><a href="contact.html">GET STARTED</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    
+    <div class="text-box">
+        <h1>Services We Offer</h1>
+        <p>Quality financial advice and services to help you meet your personal and business financial goals.
+        </p>
+    </div>
+        </section>
+
+    <!-------------our services--------------->
+<section class="people">
+    <h1>OUR SERVICES</h1>
+    <p>At Hamid Financials, our clients will get personalized attention from a small team with experience and know-how of a large CPA firm.</p>
+    <p>Our goal is to serve our clients with a full 360 degree focus on our clientele needs.</p>
+
+
+    <div class="row">
+        <div class="people-col">
+            <img src="images/taxes.png">
+            <div class="layer">
+                <h2>Individual Taxation</h2>
+                </div>
+
+        </div>
+        <div class="people-col">
+                <img src="images/solep.png">
+                <div class="layer">
+                <h2>Business - 1065's, Sole Properiters</h2>
+                </div>
+        </div>
+            <div class="people-col">
+                <img src="images/bookk.png">
+                <div class="layer">
+                    <h2>Bookkeeping</h2>
+                    </div>
+
+                </div>
+
+    </div>
+    <div class="row">
+        <div class="people-col">
+            <img src="images/payroll.png">
+            <div class="layer">
+                <h2>Payroll</h2>
+                </div>
+
+        </div>
+        <div class="people-col">
+                <img src="images/consult.png">
+                <div class="layer">
+                <h2>Counseling for Business Formation</h2>
+                </div>
+        </div>
+            <div class="people-col">
+                <img src="images/resol.png">
+                <div class="layer">
+                    <h2>Tax Resolution</h2>
+                    </div>
+
+                </div>
+
+    </div>
+
+</section>
+
+
+<!-------footer------->
+<section class="footer">
+    <h4>Find Us On Social Media Sites</h4>
+    <p>Website developed and designed by IH WebDevs</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+
+</section>  
+    
+<!-------JavaScript for Toggle Menu------->   
+    
+    <script src="https://kit.fontawesome.com/95af72fa6c.js" crossorigin="anonymous"></script>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-300px";
+        }
+    
+    </script>
+    
+    
+    </body>
+    </html>
+
+
+
+
+
+
+</html>

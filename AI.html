@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Question and Answer</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            resize: none;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ask the AI</h1>
+        <form id="questionForm">
+            <label for="questionInput">Your question:</label>
+            <input id="questionInput" type="text" placeholder="Enter your question">
+            <button type="submit">Ask AI</button>
+        </form>
+        <label for="answer">AI Answer:</label>
+        <textarea id="answer" rows="5" readonly></textarea>
+    </div>
+
+    <script>
+        // Add your server-side API call logic here.
+        function askAI(question, callback) {
+            // Implement your server-side API call here and call 'callback' with the result.
+        }
+
+        $('#questionForm').on('submit', function (event) {
+            event.preventDefault();
+            const question = $('#questionInput').val();
+            if (!question) return;
+            $('#answer').val('Thinking...');
+            askAI(question, function (err, answer) {
+                if (err) {
+                    $('#answer').val('Error: ' + err.message);
+                } else {
+                    $('#answer').val(answer);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
