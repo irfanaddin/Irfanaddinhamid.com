@@ -6,7 +6,7 @@
 .header{
 	min-height: 100vh;
 	width: 100%;
-	background-image: linear-gradient(rgba(3,9,30,0.7),rgba(3,9,30,0.7)),url(images/buildings.png);
+	background-image: linear-gradient(rgba(3,9,30,0.7),rgba(3,9,30,0.7)),url(buildings.png);
 	background-position: center;
 	background-size: cover;
 	position: relative;
