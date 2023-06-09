@@ -5,7 +5,7 @@ Description
 This website serves as a personal portfolio for Irfan, showcasing his skills, projects, and experiences. It is designed to provide visitors with a comprehensive overview of his background, achievements, and expertise.
 
 Live Demo
-You can visit the live website by clicking here.
+You can visit the live website by going to www.irfan-hamid.com.
 
 Features
 Home: Introduces Irfan and provides a brief overview of his work and interests.
